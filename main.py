@@ -1,6 +1,6 @@
 
 import urllib.parse
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -137,7 +137,7 @@ if "chat_history" not in st.session_state:
         AIMessage(content="Hello! I'm a SQL assistant. Ask me anything about your database."),
     ]
 
-load_dotenv()
+# load_dotenv()
 
 st.set_page_config(page_title="Chat with Database", page_icon=":speech_balloon:", layout="centered")
 
